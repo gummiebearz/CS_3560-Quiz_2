@@ -39,6 +39,12 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideByZero() {
+        ArithmeticException exception = assertThrows(ArithmeticException.class, () -> calculator.divide(9, 0));
+        assertEquals("Division by zero", exception.getMessage());
+    }
+
+    @Test
     public void testIsEven() {
         boolean expectedTrue = calculator.isEven(2);
         boolean expectedFalse = calculator.isEven(9);
