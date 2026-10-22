@@ -15,7 +15,7 @@ public class Calculator {
         return x / y;
     }
 
-    public boolean isEven(int x, int y) {
+    public boolean isEven(int x) {
         return false;
     }
 }

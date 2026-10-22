@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test; // Needed for @Test annotation
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CalculatorTest {
     Calculator calculator = new Calculator();
@@ -34,5 +35,12 @@ public class CalculatorTest {
         int actual = calculator.divide(9, 3);
 
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testIsEven() {
+        boolean expected = calculator.isEven(2);
+
+        assertTrue(expected);
     }
 }
