@@ -8,10 +8,9 @@ public class CalculatorTest {
 
     @Test
     public void testSum() {
-        int expected = 5;
-        int actual = calculator.sum(2, 3);
-
-        assertEquals(expected, actual);
+        assertEquals(5, calculator.sum(2, 3));
+        assertEquals(-1, calculator.sum(2, -3));
+        assertEquals(0, calculator.sum(2, -2));
     }
 
     @Test
