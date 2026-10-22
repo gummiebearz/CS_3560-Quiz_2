@@ -22,10 +22,9 @@ public class CalculatorTest {
 
     @Test
     public void testMultiply() {
-        int expected = 4;
-        int actual = calculator.multiply(2, 2);
-
-        assertEquals(expected, actual);
+        assertEquals(4, calculator.multiply(2, 2));
+        assertEquals(0, calculator.multiply(9, 0));
+        assertEquals(-9, calculator.multiply(3, -3));
     }
 
     @Test
