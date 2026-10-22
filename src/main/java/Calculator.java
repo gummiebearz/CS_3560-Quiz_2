@@ -19,7 +19,7 @@ public class Calculator {
         return x / y;
     }
 
-    public boolean isEven(int x) {
-        return x % 2 == 0;
+    public boolean isEven(int value) {
+        return value % 2 == 0;
     }
 }
