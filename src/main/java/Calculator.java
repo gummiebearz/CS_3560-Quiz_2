@@ -12,7 +12,7 @@ public class Calculator {
     }
 
     public int divide(int x, int y) {
-        return 0;
+        return x / y;
     }
 
     public boolean isEven(int x, int y) {
