@@ -19,4 +19,12 @@ public class CalculatorTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void testMultiply() {
+        int expected = 4;
+        int actual = calculator.multiply(2, 2);
+
+        assertEquals(expected, actual);
+    }
 }
