@@ -1,6 +1,11 @@
 import java.util.Arrays;
 
 public class DateChecker {
+    /**
+     * Represents the 12 months of the calendar year,
+     * used by has31Days() so that only
+     * valid months can be passed in instead of plain numbers or strings.
+     */
     enum Month {
         JANUARY,
         FEBRUARY,
