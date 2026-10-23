@@ -72,4 +72,9 @@ public class CalculatorTest {
     public void testIsEvenWithOddNumber() {
         assertFalse(calculator.isEven(9));
     }
+
+    @Test
+    public void testIsEvenWithNegativeNumber() {
+        assertTrue(calculator.isEven(-2));
+    }
 }
