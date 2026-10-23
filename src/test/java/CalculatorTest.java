@@ -39,7 +39,15 @@ public class CalculatorTest {
     @Test
     public void testMultiply() {
         assertEquals(4, calculator.multiply(2, 2));
+    }
+
+    @Test
+    public void testMultiplyWithZero() {
         assertEquals(0, calculator.multiply(9, 0));
+    }
+
+    @Test
+    public void testMultiplyWithNegativeNumber() {
         assertEquals(-9, calculator.multiply(3, -3));
     }
 
