@@ -1,0 +1,7 @@
+For this quiz, I used `Test Driven Development (TDD)` with JUnit 5 to build a `Calculator` and a `DateChecker`. For each method, I first wrote a corresponding failing test and confirmed it failed for the expected reason, then wrote the smallest code to make it pass, and then cleaned up the code (refactor). At the start, I had each method return a dummy value (like `0` or `false`) so my tests had something to fail against, which gave me a clean failing state to start from. Following the TDD approach, I made a commit every time I added a failing test, implemented the code, and refactored it.
+
+The biggest takeaway for me is that not every test fails first. For edge cases such as negative values in `isEven`, truncation in `divide`, and February in `has31Days`, I realized I didn't have to add extra code because the existing implementation already handled them. That taught me to write only enough code to pass the test, and I had to use `git revert` to remove the code I added for negative values in `isEven`. In `DateChecker`, I also accidentally wrote the logic for `has31Days` method before writing the unit tests, which goes against the TDD cycle.
+
+In terms of refactoring, I split tests into smaller tests so each one checks a single behavior. I also renamed the parameter to make it more descriptive, removed any unused imports, and added assertion messages.
+
+Overall, TDD approach made me think more about edge cases while designing the implementation, and it helped me write only the logic needed to pass the tests.
