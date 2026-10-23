@@ -68,10 +68,14 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideWithTruncation() {
+        assertEquals(3, calculator.divide(7, 2));
+    }
+
+    @Test
     public void testIsEven() {
         assertTrue(calculator.isEven(2));
     }
-
 
     @Test
     public void testIsEvenWithOddNumber() {
