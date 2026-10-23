@@ -45,10 +45,7 @@ public class CalculatorTest {
 
     @Test
     public void testDivide() {
-        int expected = 3;
-        int actual = calculator.divide(9, 3);
-
-        assertEquals(expected, actual);
+        assertEquals(3, calculator.divide(9, 3));
     }
 
     @Test
