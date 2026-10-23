@@ -63,6 +63,11 @@ public class CalculatorTest {
     }
 
     @Test
+    public void testDivideByNegativeNumber() {
+        assertEquals(9, calculator.divide(-9, -1));
+    }
+
+    @Test
     public void testIsEven() {
         assertTrue(calculator.isEven(2));
     }
