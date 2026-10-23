@@ -22,6 +22,6 @@ public class DateChecker {
             Month.DECEMBER };
 
     public boolean has31Days(Month month) {
-        return Arrays.asList(Month.values()).contains(month);
+        return Arrays.asList(monthThirtyOneDays).contains(month);
     }
 }
