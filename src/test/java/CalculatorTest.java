@@ -9,7 +9,15 @@ public class CalculatorTest {
     @Test
     public void testSum() {
         assertEquals(5, calculator.sum(2, 3));
+    }
+
+    @Test
+    public void testSumWithNegativeNumber() {
         assertEquals(-1, calculator.sum(2, -3));
+    }
+
+    @Test
+    public void testSumResultInZero() {
         assertEquals(0, calculator.sum(2, -2));
     }
 
