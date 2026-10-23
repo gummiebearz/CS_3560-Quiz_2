@@ -66,4 +66,10 @@ public class CalculatorTest {
     public void testIsEven() {
         assertTrue(calculator.isEven(2));
     }
+
+
+    @Test
+    public void testIsEvenWithOddNumber() {
+        assertFalse(calculator.isEven(9));
+    }
 }
