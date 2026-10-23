@@ -4,7 +4,7 @@ import org.junit.jupiter.params.provider.EnumSource;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class DateCheckerTester {
+public class DateCheckerTest {
     DateChecker dateChecker = new DateChecker();
 
     @ParameterizedTest
