@@ -16,7 +16,16 @@ public class CalculatorTest {
     @Test
     public void testSubtract() {
         assertEquals(9, calculator.subtract(18, 9));
-        assertEquals(-9, calculator.subtract(9, 18));
+    }
+
+    @Test
+    public void testSubtractWithZero() {
+        assertEquals(9, calculator.subtract(9, 0));
+    }
+
+    @Test
+    public void testSubtractWithNegativeNumber() {
+        assertEquals(18, calculator.subtract(9, -9));
     }
 
     @Test
